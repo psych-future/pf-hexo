@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Mirror the Github organization repos to Gitee.
-        uses: Yikun/hub-mirror-action@master
+        uses: psych-future/gitee-pages-action@master
         with:
           src: 'github/psych-future'
           dst: 'gitee/psych-future'
@@ -19,7 +19,7 @@ jobs:
           debug: true
           
       - name: Build Gitee Pages
-        uses: yanglbme/gitee-pages-action@main
+        uses: psych-future/gitee-pages-action@master
         with:
           # 注意替换为你的 Gitee 用户名
           gitee-username: psych-future
