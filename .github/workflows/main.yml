@@ -20,7 +20,7 @@ jobs:
           destination-repo: "git@gitee.com:psych-future/pf-hexo.git"
 
     - name: Build Gitee Pages
-      uses: psych-future/gitee-pages-action@main
+      uses: yanglbme/gitee-pages-action@v1.4.1
       with:
           # 注意替换为你的 Gitee 用户名
           gitee-username: psych-future
